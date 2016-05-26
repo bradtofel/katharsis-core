@@ -19,7 +19,7 @@ package io.katharsis.queryParams;
 
 /**
  * Small wrapper around the value sent with a 'page[]' URL parameter, allowing
- * fluent conversion to expected types: String, Integer, or Long.
+ * fluent conversion to expected types: String, int, or long.
  */
 public class PaginationValue {
     private final String value;
@@ -32,11 +32,11 @@ public class PaginationValue {
         return value;
     }
 
-    public Integer asInteger() {
+    public int asInteger() {
         return Integer.parseInt(value);
     }
 
-    public Long asLong() {
+    public long asLong() {
         return Long.parseLong(value);
     }
 
